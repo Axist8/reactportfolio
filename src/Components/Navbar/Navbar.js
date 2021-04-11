@@ -2,9 +2,13 @@ import React from 'react';
 
 function Navbar() {
     return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">portfolio</a></li>
+            </ul>
+        </nav>
     );
 }
 
