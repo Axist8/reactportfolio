@@ -1,13 +1,410 @@
+/**** PORTFOLIO CSS ******/
+
+/****** Base Styles ******/
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  background-color: #29212e;
+  animation-name: fade;
+  animation-duration: 2s;
+  border: 5px solid #151117;
+  border-radius: 10px;
+}
+@keyframes fade {
+  from {background-color: #50415a;}
+  to {background-color: #29212e;}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/****** Grid ******/
+  
+header,
+.thehead,
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
+
+.content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.hero-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.titlename {
+  width: 100%;
+}
+#work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#29212e, #161219);
+  padding-bottom: 65px;
+  padding-top: 35px;
+}
+.full {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero-in {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.full-rev {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 100%;
+  margin-bottom: 60px;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact figure {
+  width: 50%;
+}
+.social-icons {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact {
+  width: 100%;
+  margin-bottom: 88px;
+}
+.half-width {
+  width: 70%;
+}
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******* Special ********/
+
+.gitbut {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+	cursor: pointer;
+  position: relative;
+  color: #f5edfa;
+  transition: color .5s;
+	padding: 5px 20px;
+	border-radius: 3.75rem;
+	font-size: 1.1em;
+	font-weight: 600;
+	
+	border: 1px solid black;
+	background-image: linear-gradient(-180deg, rgb(104, 100, 68) 0%, rgb(48, 41, 8));
+	box-shadow: 0 1rem 1.25rem 0 rgb(17, 17, 11),
+							0 -0.25rem 1.5rem rgb(129, 133, 86) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(163, 146, 58) inset;
+}
+
+button::before {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+button::after {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+button:active {
+  background-image: linear-gradient(-180deg, rgb(48, 41, 8) 0%, rgb(104, 100, 68));
+}
+.sub a {
+  font-size: 0.9em;
+  color: aliceblue;
+  transition: color 1s;
+  text-decoration: none;
+}
+button:hover {
+  color: #dfb0ff;
+  text-shadow: none;
+}
+a:active {
+
+}
+
+  
+  /****** Header ******/
+
+.axe {
+  font-size: 2em;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.navi {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-bottom: 55px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 1s;
+  margin-right: 28px;
+  font-size: 1.9em;
+  transition: font-size 1s;
+}
+nav ul li a:hover {
+  color: rgb(247, 235, 170);
+  text-shadow: -2px 2px 0 #000,
+  2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000;
+  font-size: 2em;
+}
+.hero {
+  width: 100%;
+  height: 720px;
+  background: url("./assets/chess-hero.jpg") no-repeat;
+  background-size: auto;
+  background-position: top center;
+}
+img { 
+  width: 100%;
+  border-radius: 20px;
+}
+figure {
+        margin: 0;
+}
+figure img:hover {
+  border: black solid 2px;
+  width: 99%;
+  height: 99%;
+}
+
+/****** Body ******/
+  
+p {
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+  padding-bottom: 30px;
+}
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4em;
+  color: white;
+  text-shadow: -2px 2px 0 #000,
+				        2px 2px 0 #000,
+				        2px -2px 0 #000,
+				        -2px -2px 0 #000;
+}
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: hsla(50, 90%, 70%, 1);
+  text-shadow: -2px 2px 0 #000,
+				        2px 2px 0 #000,
+				        2px -2px 0 #000,
+				        -2px -2px 0 #000;
+  font-size: 3em;
+  padding-bottom: 45px;
+}
+h4 {
+  color: hsla(50, 90%, 85%, 1);
+  font-size: 2.3em;
+  text-align: center;
+  text-shadow: -1px 1px 0 black,
+				        1px 1px 0 black,
+				        1px -1px 0 black,
+				        -1px -1px 0 black;
+}
+span {
+  font-family: 'Wallpoet', cursive;
+  color: hsla(50, 60%, 70%, 1);
+  font-size: 1.2em;
+}
+h5 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+.after-half {
+  width: 75%;
+}
+.about h3 {
+  height: 35px;
+  padding-top: 50px;
+  margin: 0;
+  padding-bottom: 50px;
+}
+.about p {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.about-me {
+  color: hsla(277, 70%, 32%, 1);
+  text-shadow: -1px 1px 0 white,
+				        1px 1px 0 white,
+				        1px -1px 0 white,
+				        -1px -1px 0 white;
+}
+#about {
+  height: 525px;
+  background-color: white;
+  background-image: url("./assets/anti-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about {
+  width: 90%;
+}
+#contact {
+  background-color: #161219;
+}
+#contact h3 {
+  padding-top: 50px;
+}
+
+
+
+/*********** TABLETS *************/
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/************** DESKTOP *****************/
+
+@media only screen and (min-width: 1200px) {
+.thehead {
+  height: 91px;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.titlename {
+  width: 40%;
+}
+nav ul {
+  flex-flow: row;
+}
+.navi {
+  padding-bottom: 0;
+}
+.hero {
+  height: 680px;
+  background-position: center;
+  background-size: cover;
+}
+.box {
+  width: 45%;
+  margin: 2.5%;
+  margin-bottom: 20px;
+}
+.half-width {
+  width: 65%;
+}
+.after-half {
+  width: 65%;
+}
+.third {
+  width: 30%;
+}
+.thirds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+}
+.hero-in {
+  justify-content: left;
+  margin-left: 200px;
+  margin-top: 100px;
+  width: 50%;
+}
+.axe {
+  font-size: 1.8em;
+  padding-top: 0;
+}
+nav ul li a {
+  font-size: 1.8em;
+}
+p {
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 2.2em;
+}
+h4 {
+  font-size: 1.9em;
+}
+h5 {
+  color: white;
+  font-size: 1.5em;
+}
+.about h3 {
+  padding-top: 70px;
+}}
