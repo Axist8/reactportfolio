@@ -11,7 +11,7 @@ export const Work = () => {
             <div className="full">
               <div className="box">
                 <figure className="example">
-                  <a href="magic-eight-ball/index.html" target="_blank"><img src={images.m8b} alt="magic eight ball project thumbnail" /></a>
+                  <a href="http://axeljorgensen.info/magic-eight-ball/index.html" target="_blank"><img src={images.m8b} alt="magic eight ball project thumbnail" /></a>
                 </figure>
               </div>
               <div className="box">
@@ -34,14 +34,14 @@ export const Work = () => {
               </div>
               <div className="box">
                 <figure className="example">
-                  <a href="unplugged/index.html" target="_blank"><img src={images.unplugged} alt="Unplugged project thumbnail" /></a>
+                  <a href="http://axeljorgensen.info/unplugged/index.html" target="_blank"><img src={images.unplugged} alt="Unplugged project thumbnail" /></a>
                 </figure>
               </div>
             </div>
             <div className="full">
               <div className="box">
                 <figure className="example">
-                  <a href="election-map-project/index.html" target="_blank"><img src={images.elecMap} alt="election map project thumbnail" /></a>
+                  <a href="http://axeljorgensen.info/election-map-project/index.html" target="_blank"><img src={images.elecMap} alt="election map project thumbnail" /></a>
                 </figure>
               </div>
               <div className="box">
@@ -64,14 +64,14 @@ export const Work = () => {
               </div>
               <div className="box">
                 <figure className="example">
-                  <a href="rogue-pickings/index.html" target="_blank"><img src={images.rogue} alt="rogue pickings project thumbnail" /></a>
+                  <a href="http://axeljorgensen.info/rogue-pickings/index.html" target="_blank"><img src={images.rogue} alt="rogue pickings project thumbnail" /></a>
                 </figure>
               </div>
             </div>
             <div className="full">
               <div className="box">
                 <figure className="example">
-                  <a href="jubilee-austen/index.html" target="_blank"><img src={images.jubilee} alt="austin jubilee project thumbnail" /></a>
+                  <a href="http://axeljorgensen.info/jubilee-austen/index.html" target="_blank"><img src={images.jubilee} alt="austin jubilee project thumbnail" /></a>
                 </figure>
               </div>
               <div className="box">
@@ -79,7 +79,7 @@ export const Work = () => {
                 <h5>HTML5 & CSS Website</h5>
                 <p>In juxtaposition with my own portfolio this project portfolio shows how important design and aesthetic can be. Both pages have a similar layout, but portray completely unique themes.</p>
                 <div className="gitbut">
-                  <a href=">https://github.com/Axist8/austin-jubilee" target="_blank" title="View the code on github ;)"><button class="sub">github</button></a>
+                  <a href="https://github.com/Axist8/austin-jubilee" target="_blank" title="View the code on github ;)"><button class="sub">github</button></a>
                 </div>
               </div>
             </div>
@@ -94,14 +94,14 @@ export const Work = () => {
               </div>
               <div className="box">
                 <figure className="example">
-                  <a href="lol-cat/index.html" target="_blank"><img src={images.lolCat} alt="lol cat project thumbnail" /></a>
+                  <a href="http://axeljorgensen.info/lol-cat/index.html" target="_blank"><img src={images.lolCat} alt="lol cat project thumbnail" /></a>
                 </figure>
               </div>
             </div>
             <div className="full">
               <div className="box">
                 <figure className="example">
-                  <a href="recipe/index.html" target="_blank"><img src={images.recipe} alt="recipe project thumbnail" /></a>
+                  <a href="http://axeljorgensen.info/recipe/index.html" target="_blank"><img src={images.recipe} alt="recipe project thumbnail" /></a>
                 </figure>
               </div>
               <div className="box">
